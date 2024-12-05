@@ -62,6 +62,10 @@ for i in range(len(db)):
 # Iterate over the list of tag lists, requesting media from e621 matching each
 # set of tags.
 for tag_list in tags:
+    # Reset page number to back to 1 to ensure that all pages are read and
+    # processed when processing multiple tag lists.
+    page = 1
+
     while True:
         # Build the request URL using the current tag list, page number, and
         # page post limit.
