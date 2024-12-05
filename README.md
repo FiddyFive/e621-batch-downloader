@@ -1,10 +1,11 @@
 # e621-batch-downloader
+
 A single, simple, out of the box python file to mass download e621 images.
 
 The only requirement is Python 3.
 
 To use, simply extract the files, delete downloads/deleteme.txt and edit tags.txt to your liking.  
-In tags.txt type, in a single line, the tags as you would type them in e621.  
+In tags.txt, type the tags you would like to download against, with each line on the file representing a single set of tags to search against (as you would type them in e621's search).  
 Now run e621.py
 
 This will create a file called files.dat.  
